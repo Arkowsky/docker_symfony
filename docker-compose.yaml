@@ -1,0 +1,29 @@
+version: '2'
+services:
+  web:
+    build: docker/nginx
+    volumes: 
+      - .:/app
+    ports: 
+      - "8080:80"
+    links:
+      - php
+  php:
+    build: docker/php-fpm
+    volumes:
+      - .:/app
+    working_dir: /app
+    links:
+      - db
+  db:
+    image: mariadb:latest
+    ports:
+      - "3306:3306"
+    volumes:
+      - /private/var/lib/mysql:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: dDY6PFmVs73p
+      MYSQL_DATABASE: mygoals
+      MYSQL_USER: mygoals
+      MYSQL_PASSWORD: mygoals123
+      
