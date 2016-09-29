@@ -100,11 +100,11 @@ services:
       MYSQL_DATABASE: db
       MYSQL_USER: user
       MYSQL_PASSWORD: pass
-
+```
 Whole files structure for the project can looks like:
-
+```
 app
-…..
+..
 docker/
    	 nginx/
        	 	Dockerfile
@@ -116,6 +116,7 @@ docker-compose.yml
 ```
 
 To run all containers you just have to put
+
 ```docker-compose up```
 
-`docker-compose build` 
+```docker-compose build```
