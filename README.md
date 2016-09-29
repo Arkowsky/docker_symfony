@@ -14,6 +14,8 @@ I use MacBook Pro and tool "docker for Mac"(https://docs.docker.com/docker-for-m
 * Images can be inheritance
 * All containers work in one network e.g. 172.18.0.0 and you can use alias instead of IP’s in your app
 
+... improve this section
+
 ###Useful commands:
 
 ####Using docker-hub:
