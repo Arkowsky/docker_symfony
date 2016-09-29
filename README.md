@@ -63,7 +63,7 @@ docker rm -v mariadbtest - remove container
 
 docker rmi images_webnginx - remove image
 
-#### How to build docker for project:
+### How to build docker for project:
 
 If you want create a few containers for docker you don’t have to run bash commands like docker run -d -p 80:80 --name webserver2 nginx
 
