@@ -22,8 +22,8 @@ services:
     volumes:
       - /private/var/lib/mysql:/var/lib/mysql
     environment:
-      MYSQL_ROOT_PASSWORD: dDY6PFmVs73p
-      MYSQL_DATABASE: mygoals
-      MYSQL_USER: mygoals
-      MYSQL_PASSWORD: mygoals123
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: db
+      MYSQL_USER: user
+      MYSQL_PASSWORD: pass
       
