@@ -26,22 +26,29 @@ I use MacBook Pro and tool "docker for Mac"(https://docs.docker.com/docker-for-m
 
 ####Using docker:
 
-`docker run hello-world`	to verify that Docker is running only
+### Build image
 
 `docker images` 		show docker images
 
-`docker ps -l` 	get the name of container
+`docker build -t docker/nginx .` - build image with tag docker/nginx
 
-`docker inspect web` - get information about container(get IP number etc.)
+### Run container
 
-`docker run -d -p 80:80` --name webserver2 nginx 	- pull and run docker image (nginx) in background 
+`docker ps -l` 	get containers, you can get the name of container created before
+
+`docker run hello-world`	to verify that Docker is running only
+
+`docker run -d -p 80:80` --name webserver2 nginx 	- pull and run docker image (nginx) in background( -d )
 
 `docker run -d -p 80:80 docker/nginx` - run own image (docker/nginx) in background. If you don’t specify —name container name is random
-
 
 `docker start webserver`	- starting container webserver
 
 `docker stop webserver`	- stopping container webserver
+
+### Check IP and docker network settings
+
+`docker inspect web` - get information about container(get IP number etc.)
 
 ### How to connect with container
 
