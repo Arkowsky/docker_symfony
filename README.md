@@ -119,4 +119,10 @@ To run all containers you just have to put
 
 ```docker-compose up```
 
+To run containers in background use option -d
+
+```docker-compose up -d```
+
+To build/rebuild containers
+
 ```docker-compose build```
