@@ -18,7 +18,7 @@ I use MacBook Pro and tool "docker for Mac"(https://docs.docker.com/docker-for-m
 
 ###Useful commands:
 
-####Using docker-hub:
+####docker-hub:
 
 `docker search centos` - looking for image by name
 
@@ -26,15 +26,13 @@ I use MacBook Pro and tool "docker for Mac"(https://docs.docker.com/docker-for-m
 
 `docker push yourname/newimage` - Pushing a repository to Docker Hub( You have to be registered)
 
-####Using docker:
-
-### Build image
+#### Build image
 
 `docker images` 		show docker images
 
 `docker build -t docker/nginx .` - build image with tag docker/nginx
 
-### Run container
+#### Run container
 
 `docker ps -l` 	get containers, you can get the name of container created before
 
@@ -48,24 +46,24 @@ I use MacBook Pro and tool "docker for Mac"(https://docs.docker.com/docker-for-m
 
 `docker stop webserver`	- stopping container webserver
 
-### Check IP and docker network settings
+#### Check IP and docker network settings
 
 `docker inspect web` - get information about container(get IP number etc.)
 
-### How to connect with container
+#### How to connect with container
 
 `sudo docker attach eeb48ce48e4f` - Attach to a running container
 
 `sudo docker exec -i -t eeb48ce48e4f /bin/bash` - run bash command line from container(you are inside container)
 
-### Remove containers and images
+#### Remove containers and images
 
 docker kill mariadbtest - kill docker process
 docker rm -v mariadbtest - remove container
 
 docker rmi images_webnginx - remove image
 
-###How to build docker for project:
+#### How to build docker for project:
 
 If you want create a few containers for docker you don’t have to run bash commands like docker run -d -p 80:80 --name webserver2 nginx
 
