@@ -21,15 +21,15 @@ To run all containers:
 
 ####OS X
 
-1. Install http://docker-sync.io/
+##### Install http://docker-sync.io/
 
 ```gem install docker-sync```
 
-2. Run
+##### Run
 
 ```docker-sync-stack start```
 
-3. To stop sync
+##### To stop sync
 cmd+c 
 
 ```docker-sync-stack clean```
