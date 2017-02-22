@@ -1,0 +1,12 @@
+version: '2'
+services:
+  web:
+    volumes:
+      - unison-sync:/app:rw
+  php:
+    volumes:
+      - unison-sync:/app:rw
+
+volumes:
+  unison-sync:
+    external: true

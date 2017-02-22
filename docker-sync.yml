@@ -1,0 +1,26 @@
+version: "2"
+options:
+  compose-file-path: 'docker-compose.yml'
+  compose-dev-file-path: 'docker-compose-dev.yml'
+
+  unison_image: 'eugenmayer/unison'
+
+syncs:
+  unison-sync:
+
+    sync_strategy: 'unison'
+
+    notify_terminal: true
+
+    src: './'
+
+    dest: '/app/'
+
+    sync_host_ip: '127.0.0.1'
+
+    sync_host_port: 10872
+
+    # optional, a list of excludes for rsync - see rsync docs for details
+    sync_excludes: ['.git', '.gitignore', '.DS_Store', '.idea', 'docker', 'docker-sync.yml', 'docker-compose.yml', 'docker-compose-dev.yml', 'gulpfile.js', 'package.json', 'var/logs/*', 'var/cache/*']
+
+    sync_excludes_type: 'Name'
