@@ -21,6 +21,11 @@ To run all containers:
 
 ####OS X
 
+1. Install http://docker-sync.io/
+
+```gem install docker-sync```
+
+2. Run
 ```docker-sync-stack start```
 
 ####Linux
