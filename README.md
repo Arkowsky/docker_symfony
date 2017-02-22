@@ -6,7 +6,7 @@ I use database localy so all database files are preserve on my computer not in i
 
 ###OS X
 
-There is performance issue on iOS described on https://forums.docker.com/t/file-access-in-mounted-volumes-extremely-slow-cpu-bound/8076/126.
+There is performance issue on OS X described on https://forums.docker.com/t/file-access-in-mounted-volumes-extremely-slow-cpu-bound/8076/126.
 I have solved the issue using http://docker-sync.io/ and it works fine.
 
 ###RUN project
