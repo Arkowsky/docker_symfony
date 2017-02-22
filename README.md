@@ -5,10 +5,21 @@ This is my docker project created for symfony framework(https://symfony.com/).
 I use docker on my Mac for large symfony application and met an performance issue described under https://forums.docker.com/t/file-access-in-mounted-volumes-extremely-slow-cpu-bound/8076/126.
 To solve the issue I used external library http://docker-sync.io/.
 
-Project includes PHP7.1 + NGINX + MARIADB and can be used on linux or osx without performance issues.
+Project is ready to work with Symfony 3.1.
+Includes PHP7.1 + NGINX + MARIADB + xdebug + wkhtmltopdf + composer
+
 I didn't tested it on Windows but it should work.
 
 I use database localy so all database files are preserved on my local machine not in image.
+
+###WHAT IS SOLVED IN THIS REPOSITORY
+
+1. Performance issue as mentioned above.
+2. Increased php-fpm parameters like:
+```
+realpath_cache_size = 10M
+realpath_cache_ttl=7200
+```
 
 ###HOW TO START WITH THIS REPO
 
