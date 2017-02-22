@@ -12,15 +12,6 @@ I didn't tested it on Windows but it should work.
 
 I use database localy so all database files are preserved on my local machine not in image.
 
-###WHAT IS SOLVED IN THIS REPOSITORY
-
-1. Performance issue as mentioned above.
-2. Increased php-fpm parameters like:
-```
-realpath_cache_size = 10M
-realpath_cache_ttl=7200
-```
-
 ###HOW TO START WITH THIS REPO
 
 I will recomend to pull this repository localy and then copy files to your symfony project.
