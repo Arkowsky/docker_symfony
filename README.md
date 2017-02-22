@@ -26,7 +26,15 @@ To run all containers:
 ```gem install docker-sync```
 
 2. Run
+
 ```docker-sync-stack start```
+
+3. To stop sync
+cmd+c 
+
+```docker-sync-stack clean```
+
+More info: http://docker-sync.io/
 
 ####Linux
 
