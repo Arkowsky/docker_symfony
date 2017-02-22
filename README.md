@@ -1,22 +1,29 @@
 # Docker symfony on Mac (OS X)
 
 ###Introduction
-This is my docker project created for my symfony projects. Project includes PHP7.1 + NGINX + MARIADB.
-I use database localy so all database files are preserve on my computer not in image.
+This is my docker project created for symfony projects. 
+Project includes PHP7.1 + NGINX + MARIADB and can be used on linux or osx without performance issues.
+I use database localy so all database files are preserved on my computer not in image.
 
 ###OS X
 
 There is performance issue on OS X described on https://forums.docker.com/t/file-access-in-mounted-volumes-extremely-slow-cpu-bound/8076/126.
 I have solved the issue using http://docker-sync.io/ and it works fine.
 
-###RUN project
-To run all containers you just have to put:
+###HOW TO START WITH THIS REPO
 
-#OS X
+I will recomend to pull this repository localy and then copy files to your symfony project.
+In this repo is only one file on web/ path to show that this works fine.
+BTW. I have tested this on big symfony project and it works.
+
+###RUN project
+To run all containers:
+
+####OS X
 
 ```docker-sync-stack start```
 
-#Linux
+####Linux
 
 ```docker-compose up```
 
