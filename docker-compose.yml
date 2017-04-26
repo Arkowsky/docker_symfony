@@ -8,6 +8,8 @@ services:
       - "8080:80"
     links:
       - php
+    tty: true
+    restart: always
   php:
     build: docker/php-fpm
     volumes:
@@ -15,6 +17,8 @@ services:
     working_dir: /app
     links:
       - db
+    tty: true
+    restart: always
   db:
     image: mariadb:latest
     ports:
@@ -26,4 +30,5 @@ services:
       MYSQL_DATABASE: db
       MYSQL_USER: user
       MYSQL_PASSWORD: pass
-      
+    tty: true
+    restart: always
