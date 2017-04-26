@@ -1,4 +1,4 @@
-#DOCKER
+# DOCKER
 
 ### DOCKER - Basic concepts
 * Image is just like template/formula of container 
