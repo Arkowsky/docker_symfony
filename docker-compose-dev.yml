@@ -2,11 +2,11 @@ version: '2'
 services:
   web:
     volumes:
-      - unison-sync:/app:rw
+      - project-sync:/app:nocopy
   php:
     volumes:
-      - unison-sync:/app:rw
+      - project-sync:/app:nocopy
 
 volumes:
-  unison-sync:
+  project-sync:
     external: true
