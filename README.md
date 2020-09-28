@@ -20,6 +20,9 @@ I have committed to this repo only one file to `web/` path, only to show that it
 
 ### RUN project
 
+Add to your /etc/hosts
+```127.0.0.1 web```
+
 #### OS X
 
 ##### Install http://docker-sync.io/
